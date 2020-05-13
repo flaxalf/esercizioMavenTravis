@@ -4,6 +4,12 @@
   <artifactId>Simple</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <!--  informazioni -->
+  <name>simpleMath</name>
+  <description>modulo di operazioni matematiche</description>
+  <inceptionYear>2020</inceptionYear>
+
+  <!--  dipendenze -->
   <dependencies>
     <dependency>
 	  <groupId>org.json</groupId>
@@ -11,4 +17,11 @@
 	  <version>20190722</version>
 	</dependency>  
   </dependencies>
+  
+  <!--  sovrascrittura delle azioni di build -->
+  <build>
+ 	<defaultGoal>install</defaultGoal>
+ 	<directory>${basedir}/target</directory>
+ 	<finalName>${artifactId}-${version}</finalName>
+  </build>
 </project>

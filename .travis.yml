@@ -9,4 +9,3 @@ script:
 - mvn integration-test
 - mvn verify
 - mvn install
-- mvn deploy
